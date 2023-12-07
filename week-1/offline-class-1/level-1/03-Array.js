@@ -5,7 +5,7 @@
 
 // Run each function to see the output, play and learn by doing.
 
-// push()
+// push() o/p = [1,2,3,4]
 function pushExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -14,7 +14,7 @@ function pushExample(arr, element) {
 }
 pushExample([1, 2, 3], 4);
 
-// pop()
+// pop() o/p=[1,2]
 function popExample(arr) {
   console.log("Original Array:", arr);
 
@@ -23,7 +23,7 @@ function popExample(arr) {
 }
 popExample([1, 2, 3]);
 
-// shift()
+// shift() o/p=[2,3]
 function shiftExample(arr) {
   console.log("Original Array:", arr);
 
@@ -32,7 +32,7 @@ function shiftExample(arr) {
 }
 shiftExample([1, 2, 3]);
 
-// unshift()
+// unshift() o/p = [0,1,2,3]
 function unshiftExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -41,7 +41,7 @@ function unshiftExample(arr, element) {
 }
 unshiftExample([1, 2, 3], 0);
 
-// concat()
+// concat() o/p=[1,2,3,4,5,6]
 function concatExample(arr1, arr2) {
   console.log("Original Arrays:", arr1, arr2);
 
