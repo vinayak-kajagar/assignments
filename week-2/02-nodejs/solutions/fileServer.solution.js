@@ -33,7 +33,7 @@ app.get('/file/:filename', function (req, res) {
     if (err) {
         return res.status(404).send('File not found');
     }
-    res.send(data);
+    res.status(200).send(data);
     });
 });
 
