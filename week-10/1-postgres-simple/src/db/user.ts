@@ -10,7 +10,8 @@ import { client } from "..";
  * }
  */
 export async function createUser(username: string, password: string, name: string) {
-    
+    const result = await client.query('INSERT INTO users (username, password, name) VALUES ($1, $2, $3)', [username, password, name]);
+    return result;
 }
 
 /*
@@ -22,5 +23,6 @@ export async function createUser(username: string, password: string, name: strin
  * }
  */
 export async function getUser(userId: number) {
-    
+    const result = await client.query('SELECT * FROM users WHERE id = $1', [userId]);
+    return result.rows[0];
 }
